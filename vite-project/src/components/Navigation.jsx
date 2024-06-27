@@ -8,15 +8,15 @@ import MiFoto from './MiFoto'
 import Mirza from './Mirza'
 import Negra from './Negra'
 import YoyMizra from './YoyMizra'
-
+import "../Navigation.css"
 
  const Navigation = () => {
   return (
-    <div className="flex flex-wrap justify-center gap-8" >
+    <div className="navigation-container" >
      <Link to="/amor" className="inline-block">
      <figure>
-       <Amor className="w-24 h-24"/>
-        <figurecaption className="mt-2 text-center text-gray-700">Amor</figurecaption>
+       <Amor />
+        <figurecaption>Amor</figurecaption>
      </figure>
      </Link>
      <Link  to="/amor2">
@@ -38,8 +38,8 @@ import YoyMizra from './YoyMizra'
      </figure>
      </Link>
      <Link to="mifoto" >
-     <figure>
-        <MiFoto />
+     <figure >
+        <MiFoto  />
         <figurecaption>Yo</figurecaption>
      </figure>
      </Link>
